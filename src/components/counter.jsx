@@ -1,4 +1,5 @@
 import React,{useState} from "react"
+import { Botao,Countercontainer } from "./syle";
 
 
 export function Counter(){
@@ -7,10 +8,10 @@ export function Counter(){
         setVariavel(variavel+1)}
     const handleDecrement = () => {
         setVariavel(variavel-1)}
-    return(<div>
+    return(<Countercontainer>
         <p>{variavel}</p>
-        <button onClick={handleIncrement}>Increment</button>
-        <button onClick={handleDecrement}>Decrement</button>
-    </div>)
+        <Botao onClick={handleIncrement}>Increment</Botao>
+        <Botao onClick={handleDecrement}>Decrement</Botao>
+    </Countercontainer>)
 
-}
+}       
